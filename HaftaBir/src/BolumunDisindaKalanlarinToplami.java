@@ -1,18 +1,16 @@
 public class BolumunDisindaKalanlarinToplami
 {
-    public static void Bolum(int sayi1, int sayi2)
+    public static void main(String[] args)
     {
-
-        for(int i = sayi1; i < sayi2; i++)
+        int toplam = 0;
+        for(int i = 200; i < 500; i++)
         {
             if (i % 3 != 0)
             {
-                System.out.println(+i);
+                toplam +=i;
             }
         }
+        System.out.println(toplam);
     }
-    public static void main(String[] args)
-    {
-        Bolum(200,500);
-    }
+
 }
