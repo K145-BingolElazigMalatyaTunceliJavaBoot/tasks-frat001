@@ -1,9 +1,11 @@
 public class AsalSayi
 {
-    static void Asallar(int sayi1, int sayi2)
+    public static void main(String[] args)
     {
         int sayac;
-        for(int i = sayi1; i < sayi2; i++)
+        int toplam=0;
+
+        for(int i = 3; i < 100; i++)
         {
             sayac = 0;
             for(int j = 2; j < i; j++)
@@ -13,13 +15,12 @@ public class AsalSayi
                     sayac++;
                 }
             }
-            if(sayac == 0) {
-                System.out.println( + i);
+            if(sayac == 0)
+            {
+                toplam +=i;
             }
+
         }
-    }
-    public static void main(String[] args)
-    {
-        Asallar(3,100);
+        System.out.println( toplam );
     }
 }
